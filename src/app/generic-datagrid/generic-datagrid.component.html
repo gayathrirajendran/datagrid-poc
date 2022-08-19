@@ -9,7 +9,7 @@ Selected users: <span *ngFor="let user of selecteditems">{{user}}</span>
 <button type="button" (click)="toggleGroup()">Grouped: {{ isGrouped }}</button>
 
 <ng-template #datagridTemplate let-users let-total="total">
-<clr-datagrid [(clrDgSelected)]="selecteditems" (clrDgSelectedChange)="selectionChange($event)" (clrDgRefresh)="refresh($event)" [clrDgLoading]="loading">
+<clr-datagrid [(clrDgSelected)]="selecteditems" (clrDgRefresh)="refresh($event)" [clrDgLoading]="loading">
   <clr-dg-column>User ID</clr-dg-column>
   <clr-dg-column [clrDgField]="'name'">Name</clr-dg-column>
   <clr-dg-column [clrDgField]="'creation'">Creation date</clr-dg-column>
