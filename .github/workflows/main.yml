@@ -29,4 +29,4 @@ jobs:
         uses: ncipollo/release-action@v1.10.0
         with:
           artifacts: "dist/datagrid-poc/*"
-          token: ${{ secrets.SAMPLE_APP }}
+          token: ${{ secrets.GITHUB_TOKEN }}
