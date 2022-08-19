@@ -26,7 +26,7 @@ jobs:
           npm i
           npm run build
       - name: Push Build to Releases
-        uses: ncipollo/release-action@v1
+        uses: gayathrirajendran/release-action@v1
         with:
-          artifacts: "dist/angular-githubaction/*"
+          artifacts: "dist/datagrid-poc/*"
           token: ${{ secrets.TOKEN }}
