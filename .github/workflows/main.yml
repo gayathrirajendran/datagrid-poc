@@ -25,8 +25,8 @@ jobs:
         run: |
           npm i
           npm run build
-      - name: Push Build to Releases
-        uses: datagrid-poc/release-action@v1
+      - name: Create Release
+        uses: ncipollo/release-action@v1.10.0
         with:
           artifacts: "dist/datagrid-poc/*"
           token: ${{ secrets.TOKEN }}
